@@ -20,14 +20,9 @@ const comicsSlice = createSlice({
   name: 'comics',
   initialState,
   reducers: {
-    // addUser: (state, action: PayloadAction<IUser>) => {
-    //   state.datas.unshift(action.payload);
-    // },
     startLoading: state => {
       state.comicsLoading = true;
     },
-
-    // action.payload dedigimiz donen data
     getComics: (state, action: PayloadAction<IComicsResult[]>) => {
       state.comicsData = action.payload;
       state.comicsLoading = false;
@@ -48,7 +43,7 @@ const {
   getComicsFailure,
 } = comicsSlice.actions;
 
-// export user selector to get the slice in any component
+// export comics selector to get the slice in any component
 export const comicsSelector = (state: RootState) => state.comics;
 // export The reducer
 const comicsReducer = comicsSlice.reducer;

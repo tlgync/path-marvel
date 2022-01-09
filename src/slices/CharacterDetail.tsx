@@ -20,14 +20,9 @@ const characterDetailSlice = createSlice({
   name: 'characterDetail',
   initialState,
   reducers: {
-    // addUser: (state, action: PayloadAction<IUser>) => {
-    //   state.datas.unshift(action.payload);
-    // },
     startLoading: state => {
       state.detailLoading = true;
     },
-
-    // action.payload dedigimiz donen data
     getCharacter: (state, action: PayloadAction<IResult[]>) => {
       state.detailData = action.payload;
       state.detailLoading = false;
@@ -48,7 +43,7 @@ const {
   getCharacterFailure,
 } = characterDetailSlice.actions;
 
-// export user selector to get the slice in any component
+// export characterDetail selector to get the slice in any component
 export const characterDetailSelector = (state: RootState) => state.characterDetail;
 // export The reducer
 const characterDetailReducer = characterDetailSlice.reducer;

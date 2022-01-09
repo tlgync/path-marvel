@@ -24,14 +24,9 @@ const charactersSlice = createSlice({
   name: 'characters',
   initialState,
   reducers: {
-    // addUser: (state, action: PayloadAction<IUser>) => {
-    //   state.datas.unshift(action.payload);
-    // },
     startLoading: state => {
       state.loading = true;
     },
-
-    // action.payload dedigimiz donen data
     getCharacters: (state, action: PayloadAction<IResult[]>) => {
       state.data = action.payload;
       state.cloneData = action.payload;
@@ -60,7 +55,7 @@ const {
   incrementLimit,
 } = charactersSlice.actions;
 
-// export user selector to get the slice in any component
+// export characters selector to get the slice in any component
 export const charactersSelector = (state: RootState) => state.characters;
 // export The reducer
 const charactersReducer = charactersSlice.reducer;
