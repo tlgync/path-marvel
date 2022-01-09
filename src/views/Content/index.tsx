@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { charactersSelector, getAllCharacters, incrementLimits, searchCharacter } from '../../slices/Characters';
+import { charactersSelector, getAllCharacters, incrementLimits, refreshLimits, searchCharacter } from '../../slices/Characters';
 import { CharacterCard, Header, LoaderScroll } from '../../components';
 import { useAppDispatch } from '../../store';
 import { SkeletonLoading } from '../../components/Skeleton';
@@ -16,7 +16,9 @@ export const Content = () => {
     const text:string = e.target.value;
     setValue(text);
     if (text === '') {
+      dispatch(refreshLimits());
       dispatch(getAllCharacters(30));
+      window.scroll(0, 0);
     }
   };
 
@@ -41,7 +43,7 @@ export const Content = () => {
   // Handle Scroll
   const handleObserver = useCallback(entries => {
     const target = entries[0];
-    if (target.isIntersecting) {
+    if (target.isIntersecting && value === '') {
       if (value === '') {
         dispatch(incrementLimits());
       }

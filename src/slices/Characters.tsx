@@ -44,6 +44,9 @@ const charactersSlice = createSlice({
     incrementLimit: state => {
       state.limit += 10;
     },
+    refreshLimit: state => {
+      state.limit = 20;
+    },
   },
 });
 
@@ -53,6 +56,7 @@ const {
   getCharacters,
   getCharactersFailure,
   incrementLimit,
+  refreshLimit,
 } = charactersSlice.actions;
 
 // export characters selector to get the slice in any component
@@ -83,4 +87,7 @@ export const searchCharacter = (query: string): AppThunk => async (dispatch: App
 };
 export const incrementLimits = (): AppThunk => async (dispatch: AppDispatch) => {
   dispatch(incrementLimit());
+};
+export const refreshLimits = (): AppThunk => async (dispatch: AppDispatch) => {
+  dispatch(refreshLimit());
 };
