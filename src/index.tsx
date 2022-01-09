@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 ReactDOM.render(
   <React.StrictMode>

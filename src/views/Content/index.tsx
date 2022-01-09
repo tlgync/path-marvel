@@ -1,8 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { charactersSelector, getAllCharacters, incrementLimits, searchCharacter } from '../../slices/Characters';
-import { CharacterCard, Header, LoaderScroll } from '../../components';
+import { CharacterCard, Header } from '../../components';
 import { useAppDispatch } from '../../store';
+import { SkeletonLoading } from '../../components/Skeleton';
 
 export const Content = () => {
   const loader = useRef<HTMLInputElement>(null);
@@ -75,7 +76,7 @@ export const Content = () => {
         ))}
       </div>
       <div ref={loader} />
-      {loading && <LoaderScroll />}
+      {loading && <SkeletonLoading />}
     </>
   );
 };
