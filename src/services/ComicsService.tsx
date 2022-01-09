@@ -11,7 +11,7 @@ export const ComicsService = {
       },
     };
 
-    return Fetch(`http://gateway.marvel.com/v1/public/comics?limit=100&offset=0&ts=1&apikey=${BaseConfig.utilities.marvelPublicKey}&hash=${BaseConfig.utilities.hash}`, requestOptions);
+    return Fetch(`${BaseConfig.api.release.user}comics?limit=100&offset=0&ts=1&apikey=${BaseConfig.utilities.marvelPublicKey}&hash=${BaseConfig.utilities.hash}`, requestOptions);
   },
 
 };

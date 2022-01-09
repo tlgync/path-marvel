@@ -5,18 +5,15 @@ import { Link } from 'react-router-dom';
 
 interface IHeader{
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleKeyPress?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
-  handleSearch?: React.MouseEventHandler<HTMLElement>;
   placeHolder: string
   value: string
 }
 
-export const Header = ({ onChange, placeHolder, value, handleSearch, handleKeyPress }:IHeader) => (
+export const ComicsHeader = ({ onChange, placeHolder, value }:IHeader) => (
   <div className="header">
     <div className="col-3">
-      <input onKeyPress={handleKeyPress} value={value} onChange={onChange} placeholder={placeHolder} />
+      <input value={value} onChange={onChange} placeholder={placeHolder} />
       <span className="focus-bg" />
-      <button onClick={handleSearch} type="button">Search</button>
     </div>
     <Link to="/">
       <img src="../img/logo.svg" alt="logo" />

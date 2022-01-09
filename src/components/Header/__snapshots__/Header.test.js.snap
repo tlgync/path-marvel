@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Render SnapShot 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="col-3"
+  >
+    <input
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      placeholder=""
+      value=""
+    />
+    <span
+      className="focus-bg"
+    />
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="logo"
+      src="../img/logo.svg"
+    />
+  </a>
+</div>
+`;

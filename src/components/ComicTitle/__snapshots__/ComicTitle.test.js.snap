@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicTitle Render SnapShot 1`] = `
+<div
+  className="comic-title"
+>
+  <span>
+    Avengers: The Initiative (2007) #19
+  </span>
+</div>
+`;

@@ -54,9 +54,9 @@ export const comicsSelector = (state: RootState) => state.comics;
 const comicsReducer = comicsSlice.reducer;
 export default comicsReducer;
 // Actions
-export const getAllComics = (): AppThunk => async (dispatch: AppDispatch) => {
+export const getComicsDetail = (id:string): AppThunk => async (dispatch: AppDispatch) => {
   dispatch(startLoading());
-  Service.Comics.GetAllComics().then((res:any) => {
+  Service.Characters.GetCharacterComics(id).then((res:any) => {
     if (res && res.status === 'Ok') {
       dispatch(getComics(res.data.results));
     } else {

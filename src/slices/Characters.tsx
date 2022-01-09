@@ -9,6 +9,7 @@ export type CharactersState = {
     hasErrors: boolean;
     data: IResult[];
     cloneData: IResult[];
+    limit: number
 };
 //
 export const initialState: CharactersState = {
@@ -16,6 +17,7 @@ export const initialState: CharactersState = {
   hasErrors: false,
   data: [],
   cloneData: [],
+  limit: 20,
 };
 // A slice
 const charactersSlice = createSlice({
@@ -44,6 +46,9 @@ const charactersSlice = createSlice({
       // handling Errors
       state.hasErrors = true;
     },
+    incrementLimit: state => {
+      state.limit += 10;
+    },
   },
 });
 
@@ -52,7 +57,7 @@ const {
   startLoading,
   getCharacters,
   getCharactersFailure,
-  searchCharacters,
+  incrementLimit,
 } = charactersSlice.actions;
 
 // export user selector to get the slice in any component
@@ -71,7 +76,16 @@ export const getAllCharacters = (limit: number): AppThunk => async (dispatch: Ap
     }
   });
 };
-export const searchCharacter = (data: IResult[]): AppThunk => async (dispatch: AppDispatch) => {
+export const searchCharacter = (query: string): AppThunk => async (dispatch: AppDispatch) => {
   dispatch(startLoading());
-  dispatch(searchCharacters(data));
+  Service.Characters.GetCharacterSearch(query).then(res => {
+    if (res && res.status === 'Ok') {
+      dispatch(getCharacters(res.data.results));
+    } else {
+      dispatch(getCharactersFailure());
+    }
+  });
+};
+export const incrementLimits = (): AppThunk => async (dispatch: AppDispatch) => {
+  dispatch(incrementLimit());
 };

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterCard SnapShot 1`] = `
+<a
+  href="/detail/1011334"
+  onClick={[Function]}
+  style={
+    Object {
+      "color": "rgba(0,0,0,.85)",
+    }
+  }
+>
+  <div
+    className="character"
+  >
+    <img
+      alt="character"
+      className="character-img"
+      src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
+    />
+    <div
+      className="character-name"
+    >
+      3-D Man
+    </div>
+  </div>
+</a>
+`;

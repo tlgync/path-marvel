@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterDetailContent SnapShot 1`] = `
+<div
+  className="detailContainer"
+>
+  <img
+    alt="character"
+    className="characterDetail-img"
+    src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
+  />
+  <span
+    className="characterDetail-name"
+  >
+    3-D Manw
+  </span>
+</div>
+`;

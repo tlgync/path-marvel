@@ -1,14 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&display=swap');
 body {
   margin: 0;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Bangers', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Bangers', cursive;
 }
 
 .header {
@@ -18,7 +18,40 @@ code {
   align-items: center;
   background-color: #202020;
   padding: 5px 0px;
+  position: fixed;
+  z-index: 199;
 }
+
+.header input {
+  border: 0; padding: 7px 15px; border: 1px solid #3a3939; position: relative; background: transparent;
+  color: #fff;
+  outline: none;
+  width: 250px;
+  padding: 10px 10px;
+}
+
+.col-3{
+   float: left; margin: 40px 3%;
+   position: absolute;
+   right: 0;
+   width: 250px;
+   display: flex;
+   flex-direction: row;
+  }
+
+  .col-3 button {
+    outline: none;
+    border: 1px solid #3a3939;
+    background-color: #3a3939;
+    color: #fff;
+    cursor: pointer;
+  }
+
+.header input ~ .focus-bg:before,
+.header input ~ .focus-bg:after{content: ""; position: absolute; left: 50%; top: 50%; width: 0; height: 0; background-color: #3a3939; transition: 0.3s; z-index: -1;}
+.header input:focus ~ .focus-bg:before{transition: 0.3s; width: 242px; left: 0; top: 0; height: 100%;}
+.header input ~ .focus-bg:after{left: auto; right: 50%; top: auto; bottom: 50%;}
+.header input:focus ~ .focus-bg:after{transition: 0.3s; width: 250px; height: 100%; bottom: 0; right: 0;}
 
 .content {
   height: auto;
@@ -27,6 +60,7 @@ code {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 100px;
 }
 
 .character {
@@ -70,4 +104,108 @@ code {
   transform: skew(-15deg);
   font-weight: bold;
   padding: 0 9px;
+}
+
+.detailContainer {
+  width: 100%;
+  background-color: #3a3939;
+  padding-top: 20px;
+  border: 2px solid #000;
+  box-shadow: 0 6px 6px -6px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;  
+}
+
+.characterDetail-img{
+  border: 2px solid #000;
+  box-shadow: 0 6px 6px -6px #000;
+  max-width: 300px;
+}
+
+.characterDetail-name{
+  color: #fff;
+  font-size: 54px;
+  text-align: center;
+}
+
+.detail-content{
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: 2px solid #000;
+  box-shadow: 0 6px 6px -6px #000;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detail-desc{
+  display: flex;
+  flex-direction: column;
+}
+
+.comics{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comic {
+  margin: 1vmin;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 20px;
+}
+
+.comic-content{
+  flex: 1 1;
+  padding-left: 10px;
+}
+
+.comic-title{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 19px;
+}
+.comic-title-row{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 9px 0;
+}
+
+.comic-title-row span {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color:#626262 
+}
+
+.comic-img{
+  transform-origin: 100 100;
+  transition: transform .5s ease;
+  flex-shrink: 0;
+  min-height: 100%;
+  max-height: 100%;
+  border: 2px solid #000;
+  box-shadow: 0 6px 6px -6px #000;
 }

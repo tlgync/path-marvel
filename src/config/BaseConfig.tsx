@@ -1,10 +1,10 @@
 export const BaseConfig = {
   api: {
     release: {
-      user: 'http://localhost:5000/',
+      user: 'http://gateway.marvel.com/v1/public/',
     },
     debug: {
-      user: 'http://localhost:5000/',
+      user: 'http://gateway.marvel.com/v1/public/',
     },
     user: (url: string) => (BaseConfig.api.debug ? BaseConfig.api.debug.user.concat(url) : BaseConfig.api.release.user.concat(url)),
   },

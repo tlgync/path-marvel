@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Render SnapShot 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "background": "#eee",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 99,
+    }
+  }
+>
+  <div
+    aria-label="animation"
+    onClick={[Function]}
+    role="button"
+    style={
+      Object {
+        "height": "55px",
+        "margin": "0 auto",
+        "outline": "none",
+        "overflow": "hidden",
+        "width": "55px",
+      }
+    }
+    tabIndex="0"
+    title=""
+  />
+</div>
+`;

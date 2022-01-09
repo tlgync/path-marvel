@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailDescription Render SnapShot 1`] = `
+<div
+  className="detail-desc"
+>
+  <span>
+    Description
+  </span>
+  <span>
+    -
+  </span>
+</div>
+`;

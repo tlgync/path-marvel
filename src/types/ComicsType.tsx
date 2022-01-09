@@ -1,4 +1,4 @@
-export interface Comics {
+export interface IComics {
     code: string;
     status: string;
     copyright: string;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComicDetailRow Render SnapShot 1`] = `
+<div
+  className="comic-title-row"
+>
+  <span>
+    Page Count
+    : 
+  </span>
+  <span>
+    32
+  </span>
+</div>
+`;
