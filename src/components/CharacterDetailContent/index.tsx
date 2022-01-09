@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 interface ICharacterDetail {
     path:string
     name:string
@@ -5,7 +7,7 @@ interface ICharacterDetail {
 
 export const CharacterDetailContent = ({ path, name }: ICharacterDetail) => (
   <div className="detailContainer">
-    <img className="characterDetail-img" src={`${path}.jpg`} alt="character" />
+    <LazyLoadImage effect="blur" className="characterDetail-img" src={`${path}.jpg`} alt="character" />
     <span className="characterDetail-name">{name}</span>
   </div>
 );

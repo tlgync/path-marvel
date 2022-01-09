@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ComicDetailRow } from '../ComicDetailRow';
 import { ComicTitle } from '../ComicTitle';
 
@@ -11,7 +12,7 @@ interface IComic {
 
 export const ComicCard = ({ path, title, pageCount, date, price }: IComic) => (
   <>
-    <img className="comic-img" src={`${path}.jpg`} alt="" />
+    <LazyLoadImage effect="blur" className="comic-img" src={`${path}.jpg`} alt="" />
     <div className="comic-content">
       <ComicTitle title={title} />
       <ComicDetailRow content={pageCount} title="Page Count" />

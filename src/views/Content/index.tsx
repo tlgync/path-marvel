@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { charactersSelector, getAllCharacters, incrementLimits, searchCharacter } from '../../slices/Characters';
-import { CharacterCard, Header } from '../../components';
+import { CharacterCard, Header, LoaderScroll } from '../../components';
 import { useAppDispatch } from '../../store';
 import { SkeletonLoading } from '../../components/Skeleton';
 
@@ -71,12 +71,16 @@ export const Content = () => {
         handleSearch={handleSearch}
       />
       <div className="content">
-        {data.map(item => (
+        {data.length > 0 ? data.map(item => (
           <CharacterCard key={item.id} image={item.thumbnail} name={item.name} id={item.id} />
-        ))}
+        )) : (
+          (
+            <SkeletonLoading />
+          )
+        )}
       </div>
       <div ref={loader} />
-      {loading && <SkeletonLoading />}
+      {loading && <LoaderScroll />}
     </>
   );
 };
