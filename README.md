@@ -20,6 +20,11 @@
 ### Used Technologies:
 
 - react-lazy-load-image-component (https://github.com/Aljullu/react-lazy-load-image-component)
+- react-lottie" (https://github.com/chenqingspring/react-lottie)
+
+&nbsp;
+&nbsp;
+&nbsp;
 
 ## Getting Started with Create React App
 
