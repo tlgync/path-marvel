@@ -6,7 +6,7 @@
 
 [<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />](https://www.javascript.com/)
 
-[<img align="left" alt="Typescript" width="26px" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-icons.com%2Ficon%2Ffile-type-typescript%2F130108&psig=AOvVaw37gYXt43c21UkjlPdhpZLY&ust=1641863343439000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjt6d7_pfUCFQAAAAAdAAAAABAD" />](https://www.typescriptlang.org/)
+[<img align="left" alt="Typescript" width="26px" src="https://kab.wikipedia.org/wiki/TypeScript#/media/Tugna:Typescript_logo_2020.svg" />](https://www.typescriptlang.org/)
 
 [<img align="left" alt="Redux" width="26px" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdaqxzxzy8xq3u.cloudfront.net%2Fwp-content%2Fuploads%2F2019%2F04%2F21032431%2Fredux-cover-imgage-1024x768.jpg&imgrefurl=https%3A%2F%2Flinguinecode.com%2Fpost%2Funderstanding-redux-reducers&tbnid=M12TyBNUaKjaaM&vet=12ahUKEwie3ZbT_qX1AhU5x7sIHQaiC-EQMygPegUIARDJAQ..i&docid=7S6rcxk7ztGQtM&w=1024&h=768&q=redux&ved=2ahUKEwie3ZbT_qX1AhU5x7sIHQaiC-EQMygPegUIARDJAQ" />](https://redux.js.org/)
 
