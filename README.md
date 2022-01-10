@@ -29,14 +29,11 @@
 
 ### `Screenshot`
 
-[<img align="left" alt="git" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/360x740.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/360x740.png?raw=true)
-[<img align="left" alt="git" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/375x812.png?raw=true" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/375x812.png?raw=true)
-[<img align="left" alt="git" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/393x786.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/393x786.png?raw=true)
-[<img align="left" alt="git" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/412x846.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/412x846.png?raw=true)
-[<img align="left" alt="git" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/414x896.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/414x896.png?raw=true)
-[<img align="left" alt="git" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/medium.png?raw=true width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/medium.png?raw=true)
+[<img align="left" alt="image1" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/360x740.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/360x740.png?raw=true)
+[<img align="left" alt="image2" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/375x812.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/375x812.png?raw=true)
+[<img align="left" alt="image3" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/393x786.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/393x786.png?raw=true)
+[<img align="left" alt="image4" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/412x846.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/412x846.png?raw=true)
+[<img align="left" alt="image5" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/414x896.png?raw=true" width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/414x896.png?raw=true)
+[<img align="left" alt="image6" src="https://github.com/tlgync/path-marvel/blob/master/gitImage/medium.png?raw=true"   width="350" />](https://github.com/tlgync/path-marvel/blob/master/gitImage/medium.png?raw=true)
 
-&nbsp;
-&nbsp;
-&nbsp;
 &nbsp;
