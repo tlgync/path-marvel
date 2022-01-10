@@ -9,7 +9,7 @@
 
 
 [<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />](https://www.javascript.com/)
-[<img align="left" alt="AWS" width="26px" src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png" />](https://aws.amazon.com/)
+[<img align="left" alt="AWS" width="26px" src="https://1x5o5mujiug388ttap1p8s17-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/AWS-logo-2.jpg?_ga=2.89882204.69991617.1641778527-1706959011.1641778527" />](https://aws.amazon.com/)
 
 [<img align="left" alt="Typescript" width="26px" src="https://camo.githubusercontent.com/b5ad393b601862f37682ab5fd3278139e8d7a49968ba8af9261075024fdc4c84/687474703a2f2f646d2e676c2f6173736574732f747970657363726970744c6f676f2e706e67" />](https://www.typescriptlang.org/)
 
