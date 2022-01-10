@@ -5,6 +5,6 @@ interface IDesc {
 export const DetailDescription = ({ description }: IDesc) => (
   <div className="detail-desc">
     <span>Description</span>
-    <span>{description}</span>
+    <span className="desc">{description}</span>
   </div>
 );

@@ -9,6 +9,7 @@ import { Detail } from './views/Detail';
 function App() {
   const dispatch = useAppDispatch();
   const { limit, hasErrors } = useSelector(charactersSelector);
+
   useEffect(() => {
     if (!hasErrors) {
       dispatch(getAllCharacters(limit));
@@ -18,7 +19,7 @@ function App() {
   }, [limit]);
 
   return (
-    <>
+    < >
       <Router>
         <Switch>
           <Route exact path="/" render={() => <Content />} />

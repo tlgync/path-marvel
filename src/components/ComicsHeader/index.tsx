@@ -10,7 +10,7 @@ interface IHeader{
 }
 
 export const ComicsHeader = ({ onChange, placeHolder, value }:IHeader) => (
-  <div className="header">
+  <div className="comic-header">
     <div className="col-3">
       <input value={value} onChange={onChange} placeholder={placeHolder} />
       <span className="focus-bg" />

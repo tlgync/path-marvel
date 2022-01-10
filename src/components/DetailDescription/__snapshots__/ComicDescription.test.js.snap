@@ -7,7 +7,9 @@ exports[`DetailDescription Render SnapShot 1`] = `
   <span>
     Description
   </span>
-  <span>
+  <span
+    className="desc"
+  >
     -
   </span>
 </div>

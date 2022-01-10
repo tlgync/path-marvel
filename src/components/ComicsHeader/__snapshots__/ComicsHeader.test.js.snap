@@ -2,7 +2,7 @@
 
 exports[`ComicsHeader Render SnapShot 1`] = `
 <div
-  className="header"
+  className="comic-header"
 >
   <div
     className="col-3"

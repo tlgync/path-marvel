@@ -2,11 +2,29 @@
 
 exports[`ComicCard Render SnapShot 1`] = `
 Array [
-  <img
-    alt=""
-    className="comic-img"
-    src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
-  />,
+  <span
+    className=" lazy-load-image-background blur"
+    style={
+      Object {
+        "backgroundImage": "",
+        "backgroundSize": "",
+        "display": "inline-block",
+        "height": 400,
+        "width": 300,
+      }
+    }
+  >
+    <span
+      className=""
+      style={
+        Object {
+          "display": "inline-block",
+          "height": 400,
+          "width": 300,
+        }
+      }
+    />
+  </span>,
   <div
     className="comic-content"
   >

@@ -8,7 +8,6 @@ export type CharactersState = {
     loading: boolean;
     hasErrors: boolean;
     data: IResult[];
-    cloneData: IResult[];
     limit: number
 };
 //
@@ -16,7 +15,6 @@ export const initialState: CharactersState = {
   loading: false,
   hasErrors: false,
   data: [],
-  cloneData: [],
   limit: 20,
 };
 // A slice
@@ -27,9 +25,8 @@ const charactersSlice = createSlice({
     startLoading: state => {
       state.loading = true;
     },
-    getCharacters: (state, action: PayloadAction<IResult[]>) => {
+    getCharacters(state, action: PayloadAction<IResult[]>) {
       state.data = action.payload;
-      state.cloneData = action.payload;
       state.loading = false;
       state.hasErrors = false;
     },
@@ -45,13 +42,13 @@ const charactersSlice = createSlice({
       state.limit += 10;
     },
     refreshLimit: state => {
-      state.limit = 20;
+      state.limit = 30;
     },
   },
 });
 
 // Actions generated from the slice
-const {
+export const {
   startLoading,
   getCharacters,
   getCharactersFailure,

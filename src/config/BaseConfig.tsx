@@ -4,7 +4,7 @@ export const BaseConfig = {
       user: 'https://gateway.marvel.com/v1/public/',
     },
     debug: {
-      user: 'https://gateway.marvel.com/v1/public/',
+      user: 'http://gateway.marvel.com/v1/public/',
     },
     user: (url: string) => (BaseConfig.api.debug ? BaseConfig.api.debug.user.concat(url) : BaseConfig.api.release.user.concat(url)),
   },

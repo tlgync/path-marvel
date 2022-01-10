@@ -12,7 +12,7 @@ interface IComic {
 
 export const ComicCard = ({ path, title, pageCount, date, price }: IComic) => (
   <>
-    <LazyLoadImage effect="blur" className="comic-img" src={`${path}.jpg`} alt="" />
+    <LazyLoadImage width={300} height={400} effect="blur" src={`${path}.jpg`} alt="" />
     <div className="comic-content">
       <ComicTitle title={title} />
       <ComicDetailRow content={pageCount} title="Page Count" />

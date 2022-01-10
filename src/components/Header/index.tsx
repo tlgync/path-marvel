@@ -18,7 +18,7 @@ export const Header = ({ onChange, placeHolder, value, handleSearch, handleKeyPr
       <span className="focus-bg" />
       <button onClick={handleSearch} type="button">Search</button>
     </div>
-    <Link to="/">
+    <Link to="/" onClick={() => window.location.reload()}>
       <img src="../img/logo.svg" alt="logo" />
     </Link>
   </div>

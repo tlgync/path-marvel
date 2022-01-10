@@ -7,3 +7,4 @@ export * from './ComicsHeader/index';
 export * from './DetailDescription/index';
 export * from './Header/index';
 export * from './Loader/index';
+export * from './CharacterNotFound/index';

@@ -1,21 +1,27 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { charactersSelector, getAllCharacters, incrementLimits, refreshLimits, searchCharacter } from '../../slices/Characters';
-import { CharacterCard, Header, LoaderScroll } from '../../components';
+import { CharacterCard, Header, LoaderScroll, CharacterNotFound } from '../../components';
 import { useAppDispatch } from '../../store';
-import { SkeletonLoading } from '../../components/Skeleton';
 
 export const Content = () => {
-  const loader = useRef<HTMLInputElement>(null);
-  const { data, loading } = useSelector(charactersSelector);
-  const [value, setValue] = useState<string>('');
+  // Dispatch
   const dispatch = useAppDispatch();
+  // Ref
+  const loader = useRef<HTMLInputElement>(null);
+  // selectors
+  const { data, loading } = useSelector(charactersSelector);
+  // states
+  const [value, setValue] = useState<string>('');
+  const [infinitiFlag, setInfinitiFlag] = useState<boolean>(true);
+  const [isLoaderShow, setIsLoaderShow] = useState<boolean>(true);
 
   // onChange event
   const onChange = (e:React.ChangeEvent<HTMLInputElement>) => {
     const text:string = e.target.value;
     setValue(text);
     if (text === '') {
+      setInfinitiFlag(true);
       dispatch(refreshLimits());
       dispatch(getAllCharacters(30));
       window.scroll(0, 0);
@@ -26,8 +32,10 @@ export const Content = () => {
   const handleSearch = () => {
     if (value === '') {
       dispatch(getAllCharacters(30));
+      setInfinitiFlag(true);
     } else {
       dispatch(searchCharacter(value));
+      setInfinitiFlag(false);
     }
   };
 
@@ -35,18 +43,15 @@ export const Content = () => {
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && value !== '') {
       dispatch(searchCharacter(value));
-    } else if (e.key === 'Enter' && value === '') {
-      dispatch(getAllCharacters(30));
+      setInfinitiFlag(false);
     }
   };
 
   // Handle Scroll
   const handleObserver = useCallback(entries => {
     const target = entries[0];
-    if (target.isIntersecting && value === '') {
-      if (value === '') {
-        dispatch(incrementLimits());
-      }
+    if (target.isIntersecting) {
+      dispatch(incrementLimits());
     }
   }, []);
 
@@ -57,11 +62,13 @@ export const Content = () => {
       rootMargin: '20px',
       threshold: 0,
     };
-    if (value === '') {
-      const observer = new IntersectionObserver(handleObserver, option);
-      if (loader.current) observer.observe(loader.current);
-    }
-  }, [handleObserver]);
+    const observer = new IntersectionObserver(handleObserver, option);
+    if (loader.current) observer.observe(loader.current);
+  }, [handleObserver, isLoaderShow]);
+
+  useEffect(() => {
+    setIsLoaderShow(infinitiFlag);
+  }, [infinitiFlag]);
 
   return (
     <>
@@ -76,12 +83,10 @@ export const Content = () => {
         {data.length > 0 ? data.map(item => (
           <CharacterCard key={item.id} image={item.thumbnail} name={item.name} id={item.id} />
         )) : (
-          (
-            <SkeletonLoading />
-          )
+          !loading && <CharacterNotFound />
         )}
       </div>
-      <div ref={loader} />
+      {isLoaderShow && <div ref={loader} />}
       {loading && <LoaderScroll />}
     </>
   );
