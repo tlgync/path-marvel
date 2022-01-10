@@ -17,6 +17,8 @@
 
 &nbsp;
 
+(https://github.com/tlgync/path-marvel/blob/master/gitImage/360x740.png?raw=true)
+
 ### Used Technologies:
 
 - react-lazy-load-image-component (https://github.com/Aljullu/react-lazy-load-image-component)
