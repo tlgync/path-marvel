@@ -17,6 +17,10 @@
 
 &nbsp;
 
+### Used Technologies:
+
+- react-lazy-load-image-component (https://github.com/Aljullu/react-lazy-load-image-component)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
