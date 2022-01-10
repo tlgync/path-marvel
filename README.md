@@ -17,7 +17,7 @@
 
 &nbsp;
 
-### Used Technologies:
+### Used Packages:
 
 - react-lazy-load-image-component (https://github.com/Aljullu/react-lazy-load-image-component)
 - react-lottie" (https://github.com/chenqingspring/react-lottie)
