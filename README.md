@@ -1,3 +1,21 @@
+### Used Technologies:
+[<img align="left" alt="HTML" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />](https://tr.wikipedia.org/wiki/HTML)
+
+[<img align="left" alt="Css"  width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />](https://tr.wikipedia.org/wiki/CSS)
+
+
+[<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />](https://www.javascript.com/)
+
+[<img align="left" alt="Typescript" width="26px" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1200%2F0*RbmfNyhuBb8G3LWh.png&imgrefurl=https%3A%2F%2Flevelup.gitconnected.com%2Fdependency-injection-in-typescript-5fd1f6207f2&tbnid=B8O9nxvr5xxHqM&vet=12ahUKEwjzseO3_qX1AhVciv0HHefmB0gQMygMegUIARC9AQ..i&docid=rm0aZC7kUOXLCM&w=1200&h=630&itg=1&q=typescript&ved=2ahUKEwjzseO3_qX1AhVciv0HHefmB0gQMygMegUIARC9AQ" />](https://www.typescriptlang.org/)
+
+[<img align="left" alt="Redux" width="26px" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdaqxzxzy8xq3u.cloudfront.net%2Fwp-content%2Fuploads%2F2019%2F04%2F21032431%2Fredux-cover-imgage-1024x768.jpg&imgrefurl=https%3A%2F%2Flinguinecode.com%2Fpost%2Funderstanding-redux-reducers&tbnid=M12TyBNUaKjaaM&vet=12ahUKEwie3ZbT_qX1AhU5x7sIHQaiC-EQMygPegUIARDJAQ..i&docid=7S6rcxk7ztGQtM&w=1024&h=768&q=redux&ved=2ahUKEwie3ZbT_qX1AhU5x7sIHQaiC-EQMygPegUIARDJAQ" />](https://redux.js.org/)
+
+[<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />](https://tr.reactjs.org/)
+
+
+[<img align="left" alt="git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />](https://git-scm.com/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +32,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,15 +47,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
